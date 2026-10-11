@@ -10,7 +10,10 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins ="*", allowCredentials = "true")
+@CrossOrigin(
+    origins = "${app.frontend.url}",
+    allowCredentials = "true"
+)
 public class ApiController {
     private final HoldingRepository repository; private final AppUserRepository users; private final CasParserService parser; private final MarketPriceService market;
     public ApiController(HoldingRepository repository, AppUserRepository users, CasParserService parser, MarketPriceService market) { this.repository=repository; this.users=users; this.parser=parser; this.market=market; }
