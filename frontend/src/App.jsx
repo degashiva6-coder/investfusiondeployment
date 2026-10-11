@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, PieChart, Pie, Cell } from 'recharts';
 import { Activity, ArrowDownToLine, ArrowUpRight, BarChart3, Bell, BriefcaseBusiness, ChevronDown, CircleDollarSign, FileUp, LayoutDashboard, Lightbulb, LogOut, Plus, RefreshCw, Search, Settings2, Sparkles, Trash2, TrendingUp, Wallet, X } from 'lucide-react';
 
-const API = 'https://investfusiondeployment.onrender.com/api';
+const API = '/api';
 const apiFetch = (url, options = {}) => fetch(url, { ...options, credentials: 'include' });
 const money = n => new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(Number(n)||0);
 const pct = n => `${Number(n||0)>=0?'+':''}${Number(n||0).toFixed(2)}%`;
