@@ -1,0 +1,33 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Java / Spring Boot
+backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
+
+# React / Node.js
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
