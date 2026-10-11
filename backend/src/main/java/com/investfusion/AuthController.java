@@ -8,8 +8,10 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = {"http://localhost:5173", "http://127.0.0.1:5173"}, allowCredentials = "true")
-public class AuthController {
+@CrossOrigin(
+    origins = "https://investfusiondeployment.vercel.app",
+    allowCredentials = "true"
+)
     private final AppUserRepository users;
     private final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
     public AuthController(AppUserRepository users) { this.users = users; }
