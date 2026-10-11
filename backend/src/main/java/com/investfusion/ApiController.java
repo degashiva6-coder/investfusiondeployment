@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api")
 @CrossOrigin(
-    origins = "https://investfusiondeployment.vercel.app",
+    origins = "${app.frontend.url}",
     allowCredentials = "true"
 )
 public class ApiController {

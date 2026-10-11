@@ -13,7 +13,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/auth")
 @CrossOrigin(
-    origins = "${app.frontend.url}",
+    origins = "https://investfusiondeployment.vercel.app",
     allowCredentials = "true"
 )
 public class AuthController {
